@@ -1,3 +1,3 @@
-import webbrowser
+import pygame
 
-webbrowser.open("https://pypi.org")
+pygame.init()
