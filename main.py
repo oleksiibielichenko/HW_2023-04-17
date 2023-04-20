@@ -1,5 +1,6 @@
 from classes.classes import QA
 from classes.classes import Developer
+from classes.classes import Employee
 import random
 
 qa_1 = QA('Frank', '56')
@@ -11,9 +12,8 @@ dev_3 = Developer('Stefany', '26')
 
 list_of_employee = [qa_1, qa_2, qa_3, dev_1, dev_2, dev_3]
 
-print(list_of_employee)
-# random.randint(list_of_employee.index[0], len(list_of_employee))
-
-# def quit(employee):
-#     global list_of_employee
-#     from
+i = random.randint(0, len(list_of_employee)-1)
+dismissed_employee = list_of_employee[i]
+print('Dismissed employee is', dismissed_employee.__dict__['name'])
+dismissed_employee.unemployed = True
+Employee.status(list_of_employee)
